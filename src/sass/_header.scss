@@ -27,7 +27,7 @@
   margin-right: 120px;
 }
 .header-nav__link {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   line-height: 21px;
   color: $color-primary-text;
@@ -103,3 +103,9 @@
     display: none;
   }
 }
+@import './bio-eco';
+@import './elements';
+@import './menu-toggle';
+@import './mobile-menu';
+@import './number-sales';
+@import './redirect';
