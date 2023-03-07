@@ -1,0 +1,273 @@
+<header class="header">
+    <div class="header__container container">
+      <div class="header-index">
+        <a
+          href="#"
+          rel="noopener noreferrer"
+          class="header-index__title links"
+          ><svg class="header-index__svg" width="200" height="50">
+            <use href="./images/svg.defs.svg#icecream"></use>
+          </svg>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__list list">
+            <li class="header-nav__item items">
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                class="header-nav__link links header-nav__link--active"
+                >Home</a
+              >
+            </li>
+            <li class="header-nav__item items">
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                class="header-nav__link links"
+                >About us</a
+              >
+            </li>
+            <li class="header-nav__item items">
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                class="header-nav__link links"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="header-nav__item items">
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                class="header-nav__link links"
+                >Our Products</a
+              >
+            </li>
+            <li class="header-nav__item items">
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                class="header-nav__link links"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              class="menu-burguer"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <button type="button" class="header-index__button buttons pointer">
+            Buy now
+            <svg class="header-index__button-svg" width="7px" height="10px">
+              <use href="./images/svg.defs.svg#greater"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="redirect">
+        <div class="redirect__container">
+          <ul class="redirect__list list">
+            <li class="redirect__item">
+              <p>
+                ice cream <br />
+                made with <br />
+                <span class="redirect__item-description">passion</span>
+              </p>
+            </li>
+            <li class="redirect__item buttons">
+              <button
+                type="button"
+                class="redirect__button buttons redirect__button--active pointer"
+              >
+                Products
+              </button>
+              <button type="button" class="redirect__button buttons pointer">
+                How it’s made?
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="numbers-sales">
+          <ul class="numbers-sales__list list">
+            <li class="numbers-sales__items">
+              <span class="numbers-sales__number">16</span>
+              <p class="numbers-sales__description">cafes</p>
+            </li>
+            <li class="numbers-sales__items">
+              <span class="numbers-sales__number">23</span>
+              <p class="numbers-sales__description">food trucks</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bio-eco">
+        <div class="bio-eco__container">
+          <picture class="bio-eco__picture">
+            <source
+              srcset="
+                ./images/desktop/header/bio-eco.png 1x,
+                ./images/desktop/header/bio-eco.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              srcset="
+                ./images/tablet/header/bio-eco__tablet.png 1x,
+                ./images/tablet/header/bio-eco__tablet.png 2x
+              "
+              class="bio-eco__img"
+              src="./images/tablet/header/bio-eco__tablet.png"
+              alt="bio-eco"
+            />
+          </picture>
+          <div class="bio-eco__box">
+            <p class="bio-eco__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <button type="button" class="bio-eco__button buttons pointer">
+              <svg class="bio-eco__svg">
+                <use href="./images/svg.defs.svg#right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <picture class="bio-eco__picture bio-eco__picture--sootasty">
+          <source
+            srcset="
+              ./images/desktop/header/sootasty.png 1x,
+              ./images/desktop/header/sootasty.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            srcset="
+              ./images/tablet/header/sootasty__tablet.png 1x,
+              ./images/tablet/header/sootasty__tablet.png 2x
+            "
+            class="bio-eco__img bio-eco__img--sootasty"
+            src="./images/tablet/header/sootasty__tablet.png"
+            alt="soooootasty"
+          />
+        </picture>
+      </div>
+      <div class="elements">
+        <div class="elements__circle"></div>
+        <picture class="elements__ice-cream">
+          <source
+            srcset="
+              ./images/desktop/header/ice-cream.png 1x,
+              ./images/desktop/header/ice-cream.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/header/ice-cream__tablet.png 1x,
+              ./images/tablet/header/ice-cream__tablet.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            srcset="
+              ./images/mobile/header/ice-cream__mobile.png 1x,
+              ./images/mobile/header/ice-cream__mobile.png 2x
+            "
+            class="elements__img-icecream"
+            src="./images/mobile/header/ice-cream__mobile.png"
+            alt="ice-cream"
+          />
+        </picture>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <button class="mobile-menu__close js-close-menu">
+      <svg
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+    <button type="button" class="mobile-menu__button buttons pointer">
+      Buy now
+      <svg class="mobile-menu__button-svg" width="7px" height="10px">
+        <use href="./images/svg.defs.svg#greater"></use>
+      </svg>
+    </button>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list list">
+        <li class="mobile-nav__item items">
+          <a
+            href="#"
+            rel="noopener noreferrer"
+            class="mobile-nav__link links mobile-nav__link--active"
+            >Home</a
+          >
+        </li>
+        <li class="mobile-nav__item items">
+          <a
+            href="#"
+            rel="noopener noreferrer"
+            class="mobile-nav__link links"
+            >About us</a
+          >
+        </li>
+        <li class="mobile-nav__item items">
+          <a
+            href="#"
+            rel="noopener noreferrer"
+            class="mobile-nav__link links"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="mobile-nav__item items">
+          <a
+            href="#"
+            rel="noopener noreferrer"
+            class="mobile-nav__link links"
+            >Our Products</a
+          >
+        </li>
+        <li class="mobile-nav__item items">
+          <a
+            href="#"
+            rel="noopener noreferrer"
+            class="mobile-nav__link links"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    </div>
+  </div>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
