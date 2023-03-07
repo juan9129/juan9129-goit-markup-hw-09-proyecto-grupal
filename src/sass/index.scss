@@ -1,9 +1,9 @@
 @import './utils/variables';
 @import './common-style';
-@import './header';
-@import './products';
-@import './how-its-made';
-@import './gallery';
-@import './reviews';
-@import './menu';
-@import './footer';
+@import './header/header';
+@import './products/products';
+@import './how-its-made/how-its-made';
+@import './gallery-reviews/gallery';
+@import './gallery-reviews/reviews';
+@import './menu/menu';
+@import './footer/footer';
