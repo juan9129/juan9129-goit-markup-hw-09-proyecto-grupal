@@ -1,0 +1,60 @@
+.numbers-sales {
+  display: none;
+}
+.numbers-sales__list {
+  text-align: end;
+}
+.numbers-sales__items {
+  height: 70px;
+  position: relative;
+  right: 15px;
+}
+.numbers-sales__items::after {
+  content: "";
+  display: flex;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 52px;
+  left: 50px;
+  background-color: $color-primary-text;
+  border-radius: 50%;
+}
+.numbers-sales__number {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $color-primary;
+  position: relative;
+  z-index: 1;
+}
+.numbers-sales__description {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: $color-primary-text;
+}
+@media screen and (min-width: 768px) {
+  .numbers-sales {
+    display: unset;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .numbers-sales__number {
+    font-size: 46px;
+    line-height: 53px;
+  }
+  .numbers-sales__description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .numbers-sales__items::after {
+    width: 26px;
+    height: 26px;
+    bottom: 42px;
+    left: 84px;
+  }
+}
