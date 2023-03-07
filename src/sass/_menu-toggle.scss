@@ -1,0 +1,33 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+.menu-burguer {
+  fill: $color-secondary-text;
+  &:hover {
+    fill: $color-primary;
+  }
+}
+.menu-toggle:focus .menu-burguer {
+  fill: $color-primary;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    margin: 0 26px 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+}
