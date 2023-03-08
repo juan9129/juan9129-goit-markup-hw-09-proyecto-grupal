@@ -4,7 +4,7 @@
 }
 .header__container {
   padding: 8px 20px;
-  height: 664px;
+  height: 534px;
 }
 .header-index {
   display: flex;
@@ -27,7 +27,7 @@
   margin-right: 120px;
 }
 .header-nav__link {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   line-height: 21px;
   color: $color-primary-text;
@@ -94,8 +94,8 @@
     margin-right: 124px;
   }
   .header__container {
-    padding: 40px 15px;
-    height: 664px;
+    padding: 60px 15px;
+    height: 698px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -103,9 +103,3 @@
     display: none;
   }
 }
-@import './bio-eco';
-@import './elements';
-@import './menu-toggle';
-@import './mobile-menu';
-@import './number-sales';
-@import './redirect';
