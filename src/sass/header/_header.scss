@@ -4,7 +4,7 @@
 }
 .header__container {
   padding: 8px 20px;
-  height: 534px;
+  height: 508px;
 }
 .header-index {
   display: flex;
@@ -52,13 +52,9 @@
   text-align: center;
   color: $color-primary;
   padding: 0 35px 0 35px;
-  &:hover {
-    background-color: $color-primary;
-    color: $color-primary-text;
-  }
-  &:hover .header-index__button-svg {
-    stroke: $color-primary-text;
-    fill: $color-primary;
+  &:hover,
+  &:focus {
+    background-color: $background-button-active;
   }
 }
 .header-index__button-svg {
@@ -94,8 +90,8 @@
     margin-right: 124px;
   }
   .header__container {
-    padding: 60px 15px;
-    height: 698px;
+    padding: 40px 15px;
+    height: 664px;
   }
 }
 @media screen and (max-width: 1199px) {
