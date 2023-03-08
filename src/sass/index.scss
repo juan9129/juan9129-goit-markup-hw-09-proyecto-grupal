@@ -1,10 +1,9 @@
 @import './utils/variables';
 @import './common-style';
-@import './bio-eco';
-@import './elements';
-@import './header';
-@import './menu-toggle';
-@import './mobile-menu';
-@import './mobile-menu';
-@import './number-sales';
-@import './redirect';
+@import './header/header';
+@import './products/products';
+@import './how-its-made/how-its-made';
+@import './gallery-reviews/gallery';
+@import './gallery-reviews/reviews';
+@import './menu/menu';
+@import './footer/footer';
