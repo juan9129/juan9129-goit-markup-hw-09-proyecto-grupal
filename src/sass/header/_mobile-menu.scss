@@ -6,7 +6,7 @@
   height: 100vh;
   padding: 60px 0px;
   background-color: #e17992;
-  z-index: 999;
+  z-index: 2;
   transform: translateX(192%);
   transition: transform 250ms ease-in-out;
   overflow-y: auto;
@@ -47,13 +47,9 @@
   color: $color-primary;
   padding: 0 35px 0 35px;
   margin: 0px 20px 19px 20px;
-  &:hover {
-    background-color: $color-primary;
-    color: $color-primary-text;
-  }
-  &:hover .mobile-menu__button-svg {
-    stroke: $color-primary-text;
-    fill: $color-primary;
+  &:hover,
+  &:focus {
+    background-color: $background-button-active;
   }
 }
 .mobile-menu__button-svg {
