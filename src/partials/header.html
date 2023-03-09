@@ -56,7 +56,7 @@
         <div class="header-buttons">
           <button
           aria-label="mobil modal"
-            class="menu-toggle js-open-menu"
+            class="menu-toggle js-open-menu js-open-menu-two"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
@@ -74,7 +74,7 @@
               ></path>
             </svg>
           </button>
-          <button type="button" class="header-index__button buttons pointer">
+          <button data-modal-open type="button" class="header-index__button buttons js-menu-container-two">
             Buy now
             <svg class="header-index__button-svg" width="7px" height="10px">
               <use href="./images/svg.defs.svg#greater"></use>
@@ -200,7 +200,7 @@
     </div>
   </header>
   <div class="mobile-menu js-menu-container" id="mobile-menu">
-    <button class="mobile-menu__close js-close-menu" aria-label="modal">
+    <button class="mobile-menu__close js-close-menu js-close-menu-two" aria-label="modal">
       <svg
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
@@ -214,7 +214,7 @@
         ></path>
       </svg>
     </button>
-    <button type="button" class="mobile-menu__button buttons pointer">
+    <button data-modal-open-two type="button" class="mobile-menu__button buttons js-close-menu-two">
       Buy now
       <svg class="mobile-menu__button-svg" width="7px" height="10px">
         <use href="./images/svg.defs.svg#greater"></use>
