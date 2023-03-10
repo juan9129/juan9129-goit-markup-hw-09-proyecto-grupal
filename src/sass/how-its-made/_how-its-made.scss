@@ -1,0 +1,321 @@
+.section {
+    background-color: #fff5f6;
+  }
+  
+  .about {
+    padding-top: 60px;
+    &__tittle {
+      margin: auto;
+      color: $color-primary;
+      font-family: $font-primary;
+      width: 250px;
+      height: 76px;
+      left: 56px;
+      top: 2685px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 39px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      &--secundary {
+        color: $color-secondary;
+        font-family: $font-primary;
+        width: 250px;
+        height: 21px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 21px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .about__image-cow {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+  }
+  .about__list--relative {
+    position: relative;
+    z-index: 0;
+    top: 213px;
+  }
+  @media (min-width: 768px) {
+    .about__tittle {
+      width: 600px;
+      font-size: 48px;
+      line-height: 55px;
+      &--secundary {
+        font-size: 26px;
+        line-height: 30px;
+      }
+    }
+    .about__background {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .about__tittle {
+      width: 600px;
+      font-size: 58px;
+      line-height: 66px;
+      &--secundary {
+        font-size: 30px;
+        line-height: 34px;
+      }
+    }
+    .about__background {
+      display: unset;
+    }
+  }
+  .about__list {
+    margin-left: 15px;
+    margin-top: -113px;
+  }
+  
+  @media (min-width: 768px) {
+    .about__list {
+      height: 400px;
+      margin-top: 0px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .about__list--relative {
+      top: 0;
+      right: 514px;
+    }
+    .about__item {
+      width: 538px;
+      position: relative;
+      top: -478px;
+    }
+  }
+  .about__item {
+    color: #000000;
+    font-family: 'DM+Sans';
+    width: 220px;
+    height: 79px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    &--grey {
+      color: #907e82;
+      width: 220px;
+      height: 181px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 162%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .about__item {
+      margin-left: 32px;
+      width: 344px;
+      height: 79px;
+      font-size: 14px;
+      line-height: 25px;
+      &--grey {
+        margin-left: 32px;
+        width: 344px;
+        height: 79px;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .about__item {
+      margin-left: 32px;
+      width: 466px;
+      height: 79px;
+      font-size: 16px;
+      line-height: 28px;
+      &--grey {
+        margin-left: 32px;
+        width: 466px;
+        height: 79px;
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+  .about__button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-primary;
+    margin-bottom: 25px;
+  }
+  
+  @media (min-width: 768px) {
+    .about__button {
+      margin: 0px;
+      padding-left: 5px;
+      font-size: 16px;
+      line-height: 21px;
+      position: relative;
+      top: 80px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .about__button {
+      margin: 0px;
+      font-size: 16px;
+      line-height: 21px;
+      position: relative;
+      top: -362px;
+    }
+  }
+  .about__svg {
+    margin-left: 13px;
+  }
+  .adventage__list {
+    margin-left: 15px;
+  }
+  
+  @media (min-width: 768px) {
+    .adventage__list {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .adventage__list {
+      display: flex;
+      justify-content: space-around;
+      width: 1200px;
+      margin: 0px;
+      position: relative;
+      right: 50px;
+    }
+  }
+  
+  .adventage__number {
+    color: $color-primary;
+    width: 120px;
+    height: 56px;
+    left: 20px;
+    top: 3582px;
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  
+  @media (min-width: 768px) {
+    .adventage__number {
+      font-size: 48px;
+      line-height: 55px;
+      width: 147px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .adventage__number {
+      font-size: 58px;
+      line-height: 66px;
+      width: 180px;
+      margin: 0px;
+    }
+  }
+  
+  .adventage__paragraph {
+    width: 230px;
+    height: 36px;
+    left: 20px;
+    top: 3642px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .adventage__paragraph {
+      width: 180px;
+      height: 71px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .adventage__paragraph {
+      width: 300px;
+      height: 52px;
+      display: flex;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: justify;
+      margin-top: 18px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .about__container {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .about__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .about__image {
+      width: 336px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .about__image {
+      width: 560px;
+      height: 560px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .adventages {
+      padding-top: 50px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .adventages {
+      padding-top: 100px;
+    }
+  }
+  
