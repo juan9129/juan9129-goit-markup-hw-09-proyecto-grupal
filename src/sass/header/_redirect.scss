@@ -36,9 +36,12 @@
   &--active {
     background-color: $color-primary;
     color: $color-primary-text;
+    &:hover, &:focus{
+      background-color: $color-primary;
+    }
   }
-  &:hover,
-  &:focus {
+  &:hover:not(:first-child),
+  &:focus:not(:first-child) {
     background-color: $background-button-active;
   }
 }
