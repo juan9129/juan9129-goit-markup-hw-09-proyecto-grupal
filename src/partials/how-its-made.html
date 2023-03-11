@@ -4,46 +4,35 @@
             <h3 class="about__tittle about__tittle--secundary">tradition and love</h3>
             <h1 class="about__tittle">how it’s made?</h1>
             <div class="about__container">
-                <picture class="about__picture">
+                <picture class="abouut__picture">
                     <source
                       srcset="
-                        /src/images/desktop/how-its-made/cow__desktop.png 1x,
-                        /src/images/desktop/how-its-made/cow__desktop.png 2x
+                        ./images/desktop/how-its-made/cow__desktop.png 1x,
+                        ./images/desktop/how-its-made/cow__desktop.png 2x
                       "
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        /src/images/tablet/how-its-made/cow__tablet.png 1x,
-                        /src/images/tablet/how-its-made/cow__tablet.png 2x
+                        ./images/tablet/how-its-made/cows__tablet.png 1x,
+                        ./images/tablet/how-its-made/cows__tablet.png 2x
                       "
-                      media="(min-width: 768px)"/>
-                      <img srcset="
-                      /src/images/mobile/how-its-made/cow__mobile.png 1x,
-                      /src/images/mobile/how-its-made/cow__mobile.png 2x
-                    " class="about__image-cow" src="/src/images/mobile/how-its-made/cow__mobile.png" alt="vaca y jarra de leche">
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile/how-its-made/cow__mobile.png 1x,
+                        ./images/mobile/how-its-made/cow__mobile.png 2x
+                      "
+                      class="about__cow"
+                      src="./images/mobile/how-its-made/cow__mobile.png"
+                      alt="ice-cream"
+                    />
                   </picture>
                 <ul class="about__list list">
-                    <li class="about__list--relative">
-                        <picture>
-                            <source
-                      srcset="
-                        ./images/desktop/how-its-made/background-image-desktop.png 1x,
-                        ./images/desktop/how-its-made/background-image-desktop.png 2x
-                      "
-                      media="(min-width: 768px)"/>
-                        <img srcset="
-                        ./images/mobile/how-its-made/background-image-mobile.png 1x,
-                        ./images/mobile/how-its-made/background-image-mobile.png 2x
-                      "
-                      class="about__background" src="./images/mobile/how-its-made/background-image-mobile.png" alt="">
-                    </picture>
-                    </li>
                     <li class="about__item">
                         <b class="about__paragraph">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</b>
-                    </li>
-                    <li class="about__item about__item--grey">
-                        <p>Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                        <p class="about__item--grey">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
                         </br></br> Aliquam erat volutpat. Aenean accumsan.
                         </p>
                     </li>
@@ -51,9 +40,10 @@
                         <use href="/src/images/svg.defs.svg#icon-Vector-1"></use>
                     </svg></button>
                 </ul>
+                </div>
             </div>
         </div>
-        <div class="adventages">
+        <div class="adventages section">
             <ul class="adventage__list list">
                 <li >
                     <svg width="33" height="50" class="adventage__svg">
