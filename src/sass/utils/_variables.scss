@@ -4,3 +4,11 @@ $color-primary-text: #fff;
 $color-secondary-text: #757575;
 $font-primary: 'Titan One';
 $background-button-active: #ecebeb;
+@keyframes texto-estirado {
+  0% {
+    letter-spacing: 1em;
+  }
+  100% {
+    letter-spacing: 0.7em;
+  }
+}
