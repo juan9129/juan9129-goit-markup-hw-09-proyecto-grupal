@@ -1,5 +1,6 @@
 .footer {
-  background: #FFF5F6;
+  background: #fff5f6;
+  padding-top: 60px;
 }
 .adress {
   display: flex;
@@ -14,7 +15,7 @@
     }
   }
   &__description {
-    font-family: "Titan One";
+    font-family: 'Titan One';
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -28,7 +29,7 @@
     color: $color-primary;
   }
   &__span::after {
-    content: "";
+    content: '';
     display: block;
   }
 }
@@ -66,21 +67,21 @@
     line-height: 24px;
   }
   &__link {
-    color: #D41443;
+    color: #d41443;
     font-size: 12px;
     font-weight: 700;
     line-height: 22px;
   }
 }
 .footer-box-text {
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
   padding: 16px 60px 10px;
   &__description {
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
     text-align: center;
-    color: #907E82;
+    color: #907e82;
   }
 }
 @media screen and (min-width: 768px) {
@@ -124,12 +125,3 @@
     line-height: 30px;
   }
 }
-
-
-
-
-
-
-
-
-
