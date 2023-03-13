@@ -6,7 +6,7 @@
   height: 100vh;
   padding: 60px 0px;
   background-color: #e17992;
-  z-index: 2;
+  z-index: 5;
   transform: translateX(192%);
   transition: transform 250ms ease-in-out;
   overflow-y: auto;
@@ -49,6 +49,7 @@
   margin: 0px 20px 19px 20px;
   &:hover,
   &:focus {
+    transform: translateY(-2px);
     background-color: $background-button-active;
   }
 }
@@ -60,6 +61,10 @@
 .mobile-nav__item {
   padding: 13px 20px;
   border-bottom: 1px solid #e18298;
+  &:hover,
+  &:focus {
+    transform: translateY(-2px);
+  }
 }
 .mobile-nav__link {
   color: $color-primary-text;

@@ -31,11 +31,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: rotate(90deg);
     background-color: $color-primary;
   }
   &:hover .bio-eco__svg {
+    fill: $color-primary-text;
+  }
+  &:focus .bio-eco__svg {
     fill: $color-primary-text;
   }
 }

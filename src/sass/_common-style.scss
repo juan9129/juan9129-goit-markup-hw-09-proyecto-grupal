@@ -37,9 +37,10 @@ p {
   border: none;
 }
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
 }
 .section {
   padding-top: 60px;
@@ -51,24 +52,14 @@ p {
 .hide {
   display: none;
 }
-.animacion__tittle {
-  animation-name: texto-estirado;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
 :focus-visible {
   outline: 1px solid $color-primary;
 }
-@media screen and (max-width: 479px) {
-  .container {
-    max-width: 320px;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 35px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -79,5 +70,6 @@ p {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    padding: 0 115px;
   }
 }
