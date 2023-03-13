@@ -1,0 +1,107 @@
+<div class="backdrop is-hidden" data-modal data-modal-two>
+  <div class="modal">
+    <form class="modal-form">
+      <div class="modal-form__container">
+        <div class="modal-up">
+          <p class="modal-up__title">Super Pyper ice cream</p>
+          <button data-modal-close data-modal-close-two class="modal__exit pointer"  type="submit" aria-label="button close two">
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              class="modal__svg-exit"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-form__container-img">
+          <div class="modal-form__box">
+            <img
+              srcset="
+                ./images/mobile/products/ice-cream__mobile.png 1x,
+                ./images/mobile/products/ice-cream__mobile.png 2x
+              "
+              class="modal-form__img"
+              src="./images/mobile/products/ice-cream__mobile.png"
+              alt="ice-cream"
+            />
+            <input
+              class="modal-form__input"
+              type="text"
+              name="username"
+              placeholder="how many?"
+            />
+          </div>
+          <div class="modal-form__box">
+            <img
+              srcset="
+                ./images/mobile/products/ice-coffe__mobile.png 1x,
+                ./images/mobile/products/ice-coffe__mobile.png 2x
+              "
+              class="modal-form__img"
+              src="./images/mobile/products/ice-coffe__mobile.png"
+              alt="ice-coffe"
+            />
+            <input
+              class="modal-form__input"
+              type="text"
+              name="username"
+              placeholder="how many?"
+            />
+          </div>
+          <div class="modal-form__box">
+            <img
+              srcset="
+                ./images/mobile/products/milkshake__mobile.png 1x,
+                ./images/mobile/products/milkshake__mobile.png 2x
+              "
+              class="modal-form__img"
+              src="./images/mobile/products/milkshake__mobile.png"
+              alt="milkshake"
+            />
+            <input
+              class="modal-form__input"
+              type="text"
+              name="username"
+              placeholder="how many?"
+            />
+          </div>
+        </div>
+        <div class="modal-down">
+          <div class="modal-down__container-input">
+            Name
+            <input aria-label="input text" class="modal-down__input" type="text" name="username" placeholder="">
+          </div>
+          <div class="modal-down__container-input">
+            Phone
+            <input aria-label="input telefon" class="modal-down__input" type="tel" name="tel" placeholder="">
+          </div>
+          <div class="modal-down__container-input">
+            Mail
+            <input aria-label="input email" class="modal-down__input" type="email" name="email" placeholder="">
+          </div>
+            <div class="modal-down__container-label">
+              <label class="modal-down__label-comments label">
+                <textarea
+                  class="modal-down__textarea"
+                  name="comments"
+                  rows="5"
+                  placeholder="Write something and maybe we read this"
+                ></textarea>
+              </label>
+            </div>
+            <button type="submit" class="modal-down__button buttons pointer">
+              I want that!
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

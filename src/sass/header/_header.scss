@@ -1,0 +1,117 @@
+.header {
+  background-color: rgba(255, 184, 202, 1);
+  overflow: hidden;
+}
+.header__container {
+  padding: 8px 20px;
+  height: 508px;
+}
+.header-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 148px;
+}
+.header-index__title {
+  margin-right: 55px;
+}
+.header-nav__list {
+  display: flex;
+}
+.header-nav__item {
+  margin-right: 35px;
+  &:hover,
+  &:focus {
+    transform: translateY(-2px);
+  }
+}
+.header-nav__item:nth-child(5) {
+  margin-right: 120px;
+}
+.header-nav__link {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  line-height: 21px;
+  color: $color-primary-text;
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+}
+.header-nav__link--active {
+  color: $color-primary;
+}
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header-index__button {
+  display: none;
+  width: auto;
+  height: 44px;
+  background: $color-primary-text;
+  border-radius: 22px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  color: $color-primary;
+  padding: 0 35px 0 35px;
+  &:hover,
+  &:focus {
+    transform: translateY(-3px);
+    background-color: $background-button-active;
+  }
+}
+.header-index__button-svg {
+  stroke: $color-primary;
+  fill: $color-primary-text;
+  margin-left: 12px;
+}
+@media screen and (max-width: 300px) {
+  .header-index__title {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding: 27px 32px;
+    height: 421px;
+  }
+  .header-index {
+    margin-bottom: 18px;
+    &__title {
+      margin-right: 0;
+    }
+    &__button {
+      display: unset;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-index {
+    margin-bottom: 62.29px;
+  }
+  .header-index__title {
+    margin-right: 124px;
+  }
+  .header__container {
+    padding: 40px 15px;
+    height: 677px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header-nav {
+    display: none;
+  }
+}
+@import './bio-eco';
+@import './elements';
+@import './menu-toggle';
+@import './mobile-menu';
+@import './number-sales';
+@import './redirect';
+@import './header-modal';

@@ -1,0 +1,253 @@
+.products {
+
+
+  &__title {
+      font-family: 'Titan One';
+      font-weight: 400;
+      line-height: 39px;
+      font-size: 34px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #D41443;
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 148px;
+  }
+
+  &__span{
+      font-family: 'Titan One';
+      font-weight: 400;
+      line-height: 21px;
+      text-align: center;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #FFA5BA;
+
+  }
+
+  &__fresa {
+      position: relative;
+      width: 280px;
+      background: #FFB8CA;
+      border-radius: 24px;
+
+  }
+
+  &__item {
+      padding: 40px;
+  }
+
+  &__item:hover {
+      cursor: pointer;
+      opacity: 1;
+      box-shadow: 0 5px 15px rgb(144 35 62 / 63%);
+      & .products__button{transform: rotate(-90deg);
+      background-color: #D41443;
+      border-radius: 35%;
+      box-shadow: 0 0 7px rgb(0 0 0 / 15%);
+      transform: translateY(-5px);}
+  }
+
+  &__item:hover &__button {
+      width: 50px;
+      height: 50px;
+      padding: 6.5px;
+  }
+
+  &__images {
+      position: absolute;
+      top: -140px;
+      left: 2px;
+  }
+
+  &__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 140px;
+  }
+
+  &__flavor-cream {
+      font-family: 'Titan One';
+      line-height: 1.15;
+      font-size: 20px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 139px;
+  }
+
+  &__item:hover &__flavor-cream {
+      scale: 1.2;
+
+  }
+
+  &__separator {
+      font-family: 'Titan One';
+      line-height: 23px;
+      font-size: 29px;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+  }
+
+  &__description-cream {
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 22px;
+      width: 200px;
+      height:auto;
+  }
+
+  &__item:hover &__description-cream {
+      scale: 1.2;
+  }
+
+  &__coffee {
+      position: relative;
+      width: 280px;
+      background: #F0D1A5;
+      border-radius: 24px;
+
+  }
+
+  &__milk {
+      position: relative;
+      width: 280px;
+      background: #C2E297;
+      border-radius: 24px;
+
+  }
+
+  &__button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    margin-top: 32PX;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .35s cubic-bezier(.4,0,.2,1) 0ms;
+    transition-property: width,height,margin-top,transform,box-shadow,background-color,fill;
+
+    &:focus {
+      transform: rotate(-90deg);
+      background-color: $color-primary;
+      border-radius: 35%;
+      box-shadow: 0 0 7px rgb(0 0 0 / 15%);
+      transform: translateY(-5px);
+    }
+  }
+
+  &__item:hover .products__icon{
+    fill: $color-primary-text;
+    transition: .65s cubic-bezier(.4,0,.2,1) 0ms;
+    transition-property: width,height,margin-top,transform,box-shadow,background-color,fill;
+  }
+
+  &__button:focus .products__icon {
+    fill: $color-primary-text;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    fill: #D41443;
+    padding: 7px;
+    transform: matrix(0, 1, 1, 0, 0, 0);
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .products{
+    &__flavor-cream {
+        margin-top: 80px;
+        text-transform:uppercase;
+    }
+    &__images {
+    width: 224px;
+    height: 224px;
+    left: 1px;
+    top: -143px;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 55px;
+      margin-bottom: 250px;
+    }
+    &__span {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    &__list {
+      gap: 16px;
+      flex-direction: row;
+    }
+    &__description-cream {
+      line-height: 176%;
+    }
+    &__item {
+      padding: 40px 11px;
+      width: 224px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .products{
+    &__images{
+      width: 368px;
+      height: 368px;
+        left: 3px;
+        top: -227px;
+    }
+
+    &__item {
+    padding: 50px 44px;
+    width: 368px;
+    }
+
+    &__title {
+      font-size: 58px;
+      line-height: 66px;
+      letter-spacing: 0.06em;
+    }
+
+    &__span {
+      font-size: 30px;
+      line-height: 34px;
+    }
+
+    &__list {
+      gap: 32px;
+    }
+
+    &__flavor-cream {
+      margin-top: 140px;
+      font-size: 30px;
+      line-height: 34px;
+    }
+
+    &__description-cream {
+      width: 241px;
+      font-size: 16px;
+    }
+  }
+}
+
+

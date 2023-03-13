@@ -1,0 +1,96 @@
+.bio-eco {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.bio-eco__container {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.bio-eco__box {
+  width: 125px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+}
+.bio-eco__description {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  color: $color-primary-text;
+  margin-bottom: 20px;
+}
+.bio-eco__button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $color-primary-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: rotate(90deg);
+    background-color: $color-primary;
+  }
+  &:hover .bio-eco__svg {
+    fill: $color-primary-text;
+  }
+  &:focus .bio-eco__svg {
+    fill: $color-primary-text;
+  }
+}
+.bio-eco__svg {
+  width: auto;
+  max-height: 12px;
+  fill: $color-primary;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: matrix(0, 1, 1, 0, 0, 0);
+}
+.bio-eco__img--sootasty {
+  position: relative;
+  top: 34px;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .bio-eco {
+    display: flex;
+  }
+  .bio-eco__img {
+    height: 154px;
+    width: 152px;
+    &--sootasty {
+      width: 190px;
+      height: 150px;
+      top: 29px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bio-eco__box {
+    width: 200px;
+  }
+  .bio-eco__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .bio-eco__img {
+    height: 213px;
+    width: 216px;
+    &--sootasty {
+      width: 304px;
+      height: 241px;
+      top: 59px;
+    }
+  }
+  .bio-eco__button {
+    width: 26px;
+    height: 26px;
+  }
+}
