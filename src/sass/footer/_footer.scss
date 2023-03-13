@@ -8,21 +8,6 @@
 }
 .adress-box {
   margin-bottom: 40px;
-  &__list {
-    width: 480px;
-    &:hover .adress-box__span {
-      color: $color-primary;
-      transform: translate(-194px, -6px);
-      display: flex;
-      justify-content: end;
-      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-  &__item {
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
   &__description {
     font-family: 'Titan One';
     font-weight: 400;
@@ -31,8 +16,8 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $color-secondary;
-    text-align: center;
-    height: 34px;
+    height: auto;
+    width: 230px;
   }
   &__description--passion {
     font-size: 34px;
@@ -41,15 +26,6 @@
     display: flex;
     flex-direction: row;
     height: auto;
-  }
-  &__letter {
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    &:nth-child(4) {
-      margin-right: 12px;
-    }
-    &:hover {
-      transform: scale(1.2);
-    }
   }
 }
 .adress-information {
@@ -107,6 +83,7 @@
     text-align: center;
     color: #907e82;
     &:hover {
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
       transform: scale(1.3);
     }
   }
@@ -117,6 +94,20 @@
   }
   .adress-information {
     margin-bottom: 0;
+  }
+  .adress-box__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  .adress-box__letter {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    &:nth-child(4) {
+      margin-right: 12px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   .adress-box__description {
     font-size: 26px;
@@ -138,9 +129,21 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .adress-box {
+    &:hover .adress-box__span {
+      color: $color-primary;
+      transform: translate(197px, -6px);
+      display: flex;
+      justify-content: start;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
   .adress-box__description {
     font-size: 30px;
+    text-align: center;
     line-height: 34px;
+    height: 34px;
+    width: 480px;
     &--passion {
       font-size: 58px;
       line-height: 66px;
