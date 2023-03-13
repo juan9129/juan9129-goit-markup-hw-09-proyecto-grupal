@@ -12,7 +12,7 @@
   align-items: center;
 }
 .reviews {
-  padding: 60px 40px;
+  padding: 60px 40px 25px;
 }
 .reviews__svg {
   top: 20px;
@@ -76,6 +76,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 .circle__review {
   width: 12px;
