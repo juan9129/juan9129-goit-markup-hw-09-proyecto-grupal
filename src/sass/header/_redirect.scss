@@ -36,12 +36,15 @@
   &--active {
     background-color: $color-primary;
     color: $color-primary-text;
-    &:hover, &:focus{
+    &:hover,
+    &:focus {
+      transform: translateY(-3px);
       background-color: $color-primary;
     }
   }
   &:hover:not(:first-child),
   &:focus:not(:first-child) {
+    transform: translateY(-3px);
     background-color: $background-button-active;
   }
 }

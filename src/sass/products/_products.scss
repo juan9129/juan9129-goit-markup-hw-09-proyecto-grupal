@@ -51,7 +51,16 @@
   transition-property: width, height, margin-top, transform, box-shadow,
     background-color, fill;
 }
-
+.products__button:focus {
+  transform: rotate(-90deg);
+  background-color: #d41443;
+  border-radius: 35%;
+  box-shadow: 0 0 7px rgb(0 0 0 / 15%);
+  transform: translateY(-5px);
+  & .icon-ice {
+    fill: $color-primary-text;
+  }
+}
 .products__item:hover .products__button {
   transform: rotate(-90deg);
   width: 50px;
